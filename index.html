@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MockDrill - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-body">
+    <!-- Header Section -->
+    <header class="home-header">
+        <div class="logo" id="logo-btn" title="Secret Admin Login">MockDrill</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Exams</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-badge">🚀 India's #1 Platform for Competitive Exams</div>
+        <h1>Welcome to MockDrill</h1>
+        <p>Prepare for your dream job with our top-quality mock tests and real-time analytics.</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <h2 id="section-title">🎯 Select Your Exam Category</h2>
+        
+        <!-- Admin Panel: Add New Exam -->
+        <button id="back-btn" class="back-btn" style="display: none;">🔙 Back to Categories</button>
+        <button id="add-card-btn" class="admin-btn">➕ Add New Exam (Admin Only)</button>
+
+        <div class="category-grid" id="category-grid">
+            <!-- Cards will be injected here by JS -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="home-footer">
+        <p>&copy; 2026 MockDrill. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+
+    <!-- Add Question Modal (Bilingual Form) -->
+    <div id="question-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Add Questions</h2>
+                <span class="close-modal" id="close-modal">&times;</span>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- JS Dwara 2-pane Forms yahan banenge -->
+            </div>
+            <div class="modal-footer">
+                <button id="save-questions-btn" class="nav-btn primary">Save Questions</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>
